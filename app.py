@@ -10,3 +10,8 @@ def view_tasks():
         print(f"{i}. {task}")
 
 print("Student Task Manager")
+def delete_task():
+    index = int(input("Enter task number: ")) - 1
+    if 0 <= index < len(tasks):
+        tasks.pop(index)
+        print("Task deleted!")
