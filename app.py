@@ -9,7 +9,7 @@ def view_tasks():
     for i, task in enumerate(tasks, 1):
         print(f"{i}. {task}")
 
-print("Student Task Manager")
+print("My Student Task Manager")
 def delete_task():
     index = int(input("Enter task number: ")) - 1
     if 0 <= index < len(tasks):
